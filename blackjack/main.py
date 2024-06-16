@@ -1,5 +1,5 @@
 clear = lambda: os.system('cls')
-import blackjack_art as art
+import blackjack_art as art, func 
 
 print(art.logo)
 cards = {
