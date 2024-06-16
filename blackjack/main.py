@@ -1,7 +1,5 @@
-import sys, os, func
-sys.path.append('D:\My Python Script\Python Pro Bootcamp')
 clear = lambda: os.system('cls')
-from my_module import blackjack_art as art
+import blackjack_art as art
 
 print(art.logo)
 cards = {
