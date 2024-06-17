@@ -1,5 +1,8 @@
 import random
 
+def test_dummy():
+    pass
+    
 def shuffle_card(cards):
     for card in cards:
         random.shuffle(cards[card])
