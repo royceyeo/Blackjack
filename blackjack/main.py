@@ -1,4 +1,3 @@
-clear = lambda: os.system('cls')
 import blackjack_art as art, func 
 
 print(art.logo)
@@ -42,5 +41,4 @@ while should_continue:
         computer = result[0]
         cards = result[1]
 
-clear()
 func.check_winner(player1, computer)
