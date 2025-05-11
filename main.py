@@ -1,4 +1,5 @@
 import func, blackjack_art as art
+import hash_library 
 
 print(art.logo)
 cards = {
