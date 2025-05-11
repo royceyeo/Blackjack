@@ -2,6 +2,11 @@
 
 set -e
 
+# Get the directory where this script is located
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+cd "$SCRIPT_DIR"
+
 VENV_DIR=".venv"
 PYTHON_FILE="main.py"
 
@@ -48,7 +53,7 @@ else
 fi
 
 # Install dependencies
-if [ -f "requirements.txt" ]; then
+if [ -f "./requirements.txt" ]; then
     echo "Installing dependencies..."
     $PYTHON_EXEC -m pip install --upgrade pip
     pip install -r requirements.txt || { echo "Failed to install dependencies"; deactivate; exit 1; }
