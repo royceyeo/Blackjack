@@ -8,7 +8,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$SCRIPT_DIR"
 
 VENV_DIR=".venv"
-PYTHON_FILE="main.py"
+PYTHON_FILE="./main.py"
 
 # Detect if we are on Windows
 if [[ "$OSTYPE" == "msys" || "$OSTYPE" == "win32" || "$OSTYPE" == "cygwin" ]]; then
