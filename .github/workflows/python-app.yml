@@ -35,7 +35,7 @@ jobs:
         if [ -f ./Blackjack/requirements.txt ]; then pip install -r ./Blackjack/requirements.txt; fi
         
     - name: Run executable bash script
-      run: bash ./Blackjack/run.sh
+      run: bash ./run.sh
         
     - name: Lint with flake8
       run: |
